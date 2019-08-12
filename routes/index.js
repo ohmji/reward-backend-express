@@ -1,8 +1,6 @@
-
 var express = require('express');
 var passport = require('passport')
 var router = express.Router();
-
 
 /* GET home page. */
 
@@ -10,8 +8,6 @@ var router = express.Router();
 router.get('/', function(req, res) {
   res.render('index', { user: req.user });
 });
-
-
 
 router.get('/login/line', passport.authenticate('line'));
 
